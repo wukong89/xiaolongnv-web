@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑", sans-serif;
+  background: url('assets/background.jpg') no-repeat center center/cover;
+  color: white;
+  overflow: hidden;
+}
+
+.entry-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #ffe4f2;
+}
+
+.password-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px pink;
+}
+
+.password-container input {
+  padding: 10px;
+  font-size: 18px;
+  width: 60%;
+  margin: 10px 0;
+  text-align: center;
+  border: 2px solid #ff99cc;
+  border-radius: 10px;
+}
+
+.password-container button {
+  background-color: #ff99cc;
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.hint {
+  font-size: 12px;
+  color: #d63384;
+}
+
+.story-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.centered-container {
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.poem-box {
+  margin-top: 10vh;
+  text-align: center;
+  font-size: 22px;
+  line-height: 2em;
+  white-space: pre-line;
+  width: 80%;
+  max-width: 800px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.poem-line {
+  opacity: 0.3;
+  transition: all 0.6s;
+}
+
+.poem-line.active {
+  font-size: 28px;
+  font-weight: bold;
+  opacity: 1;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.controls {
+  position: fixed;
+  bottom: 20px;
+  text-align: center;
+}
+
+.controls button {
+  background: #ff69b4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tip {
+  font-size: 12px;
+  text-align: center;
+  position: fixed;
+  bottom: 5px;
+  width: 100%;
+  color: #eee;
+}
